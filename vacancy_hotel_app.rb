@@ -21,8 +21,7 @@ class VacaucyHotelApp
     while(1)
       @latest_vacant_dates = fetch_vacant_dates
       diff_vacant_dates.each do |date|
-        # Tweet.new.update(date.display)
-        p 'jmjojo'
+        Tweet.new.update(date.display)
       end
       @previous_vacant_dates = @latest_vacant_dates
     end
